@@ -903,6 +903,19 @@ body.capture-mode .print-week-block .swap-dot{ background:#2a2f8f !important; co
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <link rel="stylesheet" href="./enhance.css">
+<style>
+html.locked .wrap {
+  display: block !important;
+}
+
+html.locked #lockScreen {
+  display: none !important;
+}
+</style>
+
+<script>
+localStorage.setItem('horaireUnlocked', '1');
+</script>
 </head>
 <body>
 <div id="lockScreen">
